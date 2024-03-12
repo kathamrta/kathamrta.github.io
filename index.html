@@ -21,9 +21,63 @@
       text-align: center;
       margin: 0; /* Remove default margin */
     }
+
+    table {
+      width: 100%; /* Make table fill the width */
+      margin: 0 auto; /* Center table horizontally */
+      table-layout: fixed; /* Ensure columns have equal width */
+    }
+
+    td {
+      text-align: center; /* Center content in table cells */
+      padding: 0; /* Remove cell padding */
+      display: flex; /* Added for content to fill width */
+      justify-content: center; /* Center content horizontally  */
+      align-items: center; /* Center content vertically */
+    }
+
+    img {
+      width: 100%; /* Make image fill cell width */
+      height: 200px; /* Adjust image height as needed */
+      margin: 0; /* Remove image margin */
+      border: none; /* Remove image border (if any) */
+    }
+
+    button {
+      background-color: #4CAF50; /* Green background color */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Kathamrta.com</h1>
+  <h1>Welcome to kathamrta.com</h1>
+
+  <table>
+    <tr>
+      <td>
+        <img src="image1.jpg" alt="Image 1 description">
+        <br>
+        <a href="link1.html"><button>Button 1</button></a>
+      </td>
+      <td>
+        <img src="image2.jpg" alt="Image 2 description">
+        <br>
+        <a href="link2.html"><button>Button 2</button></a>
+      </td>
+      <td>
+        <img src="image3.jpg" alt="Image 3 description">
+        <br>
+        <a href="link3.html"><button>Button 3</button></a>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
